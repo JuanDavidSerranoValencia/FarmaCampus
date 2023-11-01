@@ -7,6 +7,7 @@ namespace Core.Entities
 {
     public class Marca:BaseEntity
     {
-        
+        public string NombreMarca { get; set; }
+        public ICollection<Producto> Productss { get; set; }
     }
 }

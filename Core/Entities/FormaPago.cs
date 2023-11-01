@@ -7,6 +7,6 @@ namespace Core.Entities
 {
     public class FormaPago:BaseEntity
     {
-        
+        public int NombreFormaPago { get; set; }
     }
 }

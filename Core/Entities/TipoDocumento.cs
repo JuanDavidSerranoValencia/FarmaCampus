@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class TipoDocumento:BaseEntity
+    public class TipoDocumento : BaseEntity
     {
-        
+        public string NombreDocumento { get; set; }
+        public ICollection<Persona> Persons { get; set; }
     }
 }

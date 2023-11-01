@@ -7,6 +7,11 @@ namespace Core.Entities
 {
     public class Ciudad :BaseEntity
     {
+        public string NombreCiudad { get; set; }
+
+        public ICollection<UbicacionPersona> UbicacionesPersonas { get; set; }
+        public int IdDepartamentoFk { get; set; }
+        public Departamento Departamento{ get; set; }
         
     }
 }

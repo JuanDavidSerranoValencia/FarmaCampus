@@ -7,6 +7,8 @@ namespace Core.Entities
 {
     public class TipoContacto:BaseEntity
     {
-        
+        public string NombreContacto { get; set; }
+
+        public ICollection<ContactoPersona> ContactosPersonas{ get; set; }
     }
 }

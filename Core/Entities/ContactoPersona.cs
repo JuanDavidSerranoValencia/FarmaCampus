@@ -7,6 +7,10 @@ namespace Core.Entities
 {
     public class ContactoPersona:BaseEntity
     {
-        
+        public int IdPersonaFk { get; set; }
+        public Persona Persona { get; set; }
+
+        public int IdTipoContacFk { get; set; }
+        public TipoContacto TipoContacto { get; set; }
     }
 }

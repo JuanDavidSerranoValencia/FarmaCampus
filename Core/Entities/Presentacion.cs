@@ -7,6 +7,8 @@ namespace Core.Entities
 {
     public class Presentacion:BaseEntity
     {
-        
+        public string NombrePresentacion{ get; set; }
+   
+        public ICollection<Inventario> Inventariss { get; set; }
     }
 }
